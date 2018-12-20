@@ -16,6 +16,8 @@ import io.appium.java_client.android.AndroidKeyCode;
 public class KeywordUtils {
 	
 	
+	public long startTime;
+	public long endTime;
       AndroidDriver driver=(AndroidDriver) RunTest.driver;
 	
 	public boolean click(String xpath,String data)
@@ -24,6 +26,68 @@ public class KeywordUtils {
 		return true;
 	}
 	
+	public boolean isElementNotClickable(String xpath,String data)
+	{
+		driver.findElement(By.id(xpath));
+	return true;
+	
+	}
+	
+	public String startTime(String xpath,String data)
+	{
+		 startTime=System.currentTimeMillis();
+		
+	return Long.toString(startTime);
+	
+	}
+	
+	public String endTime(String xpath,String data)
+	{
+		 endTime=System.currentTimeMillis();
+		
+	return Long.toString(endTime);
+	
+	}
+	
+	public boolean isElementPresent(String xpath,String data)
+	{
+		 driver.findElement(By.id(xpath)).isDisplayed();
+		
+	return true;
+	
+	}
+	
+	
+	public String timeSpan(String xpath,String data)
+	{	
+		long timeSpan=endTime-startTime;
+		
+		return Long.toString(timeSpan);
+	}
+	
+	public boolean isElementNotClickable2(String xpath,String data)
+	{
+		driver.findElement(By.id(xpath));
+	
+	return true;
+	}
+	
+	
+	public void isElementClickable(String xpath,String data)
+	{
+		driver.findElement(By.id(xpath)).isEnabled();
+	}
+	public void isCheckBoxNotSelected(String xpath,String data)
+	{
+		if(!driver.findElement(By.id(xpath)).isSelected())
+		{
+			
+		}
+	}
+	public void isCheckBoxSelected(String xpath,String data)
+	{
+		driver.findElement(By.id(xpath)).isSelected();
+	}
 	
 	public void clickElements(String xpath,String data)
 	{
@@ -57,13 +121,10 @@ public class KeywordUtils {
 	
 	public void scrollDown(String xpath,String data)
 	{
-		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		HashMap<String, String> scrollObject = new HashMap<String, String>();
 		scrollObject.put("direction", "down");
 		js.executeScript("mobile: scroll", scrollObject);
-		
-		
 	}
 	
 	public void clickUsingName(String xpath,String data)
@@ -79,8 +140,7 @@ public class KeywordUtils {
 	public String getText(String xpath,String data)
 	{
 		System.out.println("Error Texrt:: "+driver.findElement(By.id(xpath)).getText());
-	
-	return driver.findElement(By.id(xpath)).getText();
+	    return driver.findElement(By.id(xpath)).getText();
 	}
 	
 	public boolean clickLink(String xpath,String data)

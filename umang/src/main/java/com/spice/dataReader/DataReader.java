@@ -20,6 +20,8 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
+import com.spice.umang.RunTest;
+
 public class DataReader {
 
 	public static Workbook workbook;
@@ -61,12 +63,12 @@ public class DataReader {
 	@DataProvider(name = "GetTestData")
 	public Object[] readData() throws Exception {
 		int k = 0;
-		Workbook wb = loadExcel("F:\\appium\\umang\\TestSuite\\TestSuite.xlsx");
+		Workbook wb = loadExcel(System.getProperty("user.dir")+"\\TestSuite\\"+config.getProperty("suiteName"));
 		Sheet sheet = wb.getSheet("TestSuite");
 		int lastRow = sheet.getLastRowNum();
 		// ArrayList<Map<String, String>> dataList = new ArrayList<Map<String,
 		// String>>();
-		Object[] obj = new Object[3];
+		Object[] obj = new Object[1];
 		ArrayList<String> headerData = readHeaders("TestSuite");
 		System.out.println("checkHeaderData" + headerData);
 		for (int i = 1; i <= lastRow; i++) {

@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-skipped">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Spice\AppData\Local\Temp\testng-eclipse--2032642891\testng-customsuite.xml</span>
+                    <span>C:\Users\Spice\AppData\Local\Temp\testng-eclipse--405920504\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.spice.umang.RunTest" hash-for-method="runTesting">runTesting</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.spice.umang.RunTest" hash-for-method="runTesting({DescriptionTS_9=Click on permission button, DescriptionTS_8=Click on permission button, Description...)">runTesting({DescriptionTS_9=Click on permission button, DescriptionTS_8=Click on permission button, Description...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,63 +117,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-skipped">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.spice.umang.RunTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runTesting">
-                  </a> <!-- runTesting -->
+                  <a name="runTesting({DescriptionTS_9=Click on permission button, DescriptionTS_8=Click on permission button, Description...)">
+                  </a> <!-- runTesting({DescriptionTS_9=Click on permission button, DescriptionTS_8=Click on permission button, Description...) -->
                   <span class="method-name">runTesting</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.IndexOutOfBoundsException: Index: 5, Size: 5
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:914)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.runSuites(TestNG.java:1028)
-	at org.testng.TestNG.run(TestNG.java:996)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.IndexOutOfBoundsException: Index: 5, Size: 5
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at com.spice.dataReader.DataReader.readData(DataReader.java:94)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-	... 22 more
-
-</div> <!-- stack-trace -->
+                  <span class="parameters">({DescriptionTS_9=Click on permission button, DescriptionTS_8=Click on permission button, DescriptionTS_5=Click on Login, DescriptionTS_4=Click on Login, DescriptionTS_7=Click on permission button, DescriptionTS_6=Click on Login menu, XpathTS_11=in.gov.umang.negd.g2c.staging:id/mpin_input_fld, XpathTS_10=in.gov.umang.negd.g2c.staging:id/mobile_num_input_fld, XpathTS_15=null, XpathTS_14=in.gov.umang.negd.g2c.staging:id/menuImg, XpathTS_13=null, XpathTS_12=in.gov.umang.negd.g2c.staging:id/login_btn, DescriptionTS_1=click on I agree, DescriptionTS_3=Click on Next Button, XpathTS_16=null, EndCount=16, KeywordTS_1=click, KeywordTS_6=click, DataTS_6=null, KeywordTS_5=click, DataTS_7=null, KeywordTS_4=click, DataTS_8=null, KeywordTS_3=click, DataTS_9=null, DataTS_3=null, KeywordTS_9=click, DataTS_4=null, KeywordTS_8=click, DataTS_5=null, KeywordTS_7=click, DataTS_16=null, DataTS_15=null, DataTS_14=null, DataTS_1=null, DataTS_13=null, DataTS_12=null, DataTS_11=1234, DataTS_10=7045299334, DescriptionTS_11=enter mpin, DescriptionTS_12=click on login button, DescriptionTS_13=get Start time, DescriptionTS_14=Verify Element, TCNOTS_8=TS_8,Y, KeywordTS_10=enterText, TCNOTS_9=TS_9,Y, DescriptionTS_10=enter mobile number, KeywordTS_11=enterText, TCNOTS_6=TS_6,Y, KeywordTS_12=click, TCNOTS_7=TS_7,Y, KeywordTS_13=startTime, TCNOTS_4=TS_4,Y, KeywordTS_14=isElementPresent, TCNOTS_5=TS_5,Y, KeywordTS_15=endTime, DescriptionTS_15=Get End time, KeywordTS_16=timeSpan, TCNOTS_3=TS_3,Y, DescriptionTS_16=Calculate time span, TCNOTS_1=TS_1,Y-S, XpathTS_4=in.gov.umang.negd.g2c.staging:id/loginImg, XpathTS_3=in.gov.umang.negd.g2c.staging:id/next_txt, XpathTS_6=in.gov.umang.negd.g2c.staging:id/loginTxt, TCNOTS_15=TS_15,Y, XpathTS_5=in.gov.umang.negd.g2c.staging:id/loginImg, TCNOTS_16=TS_16,Y-E, XpathTS_8=com.android.packageinstaller:id/permission_allow_button, TCNOTS_13=TS_13,Y, StartCount=2, XpathTS_7=com.android.packageinstaller:id/permission_allow_button, TCNOTS_14=TS_14,Y, TCNOTS_11=TS_11,Y, XpathTS_9=com.android.packageinstaller:id/permission_allow_button, TCNOTS_12=TS_12,Y, TCNOTS_10=TS_10,Y, XpathTS_1=in.gov.umang.negd.g2c.staging:id/cb_i_agree})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Spice\AppData\Local\Temp\testng-eclipse--2032642891\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Spice\AppData\Local\Temp\testng-eclipse--405920504\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -226,12 +189,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runTesting')
 data.setCell(0, 2, 'com.spice.umang.RunTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 55638);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 55 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -262,6 +225,10 @@ return data;
                 <span class="method-name">initiateDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">runTesting({DescriptionTS_9=Click on permission button, DescriptionTS_8=Click on permission button, Description...)</span>
+                <span class="method-start">14241 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

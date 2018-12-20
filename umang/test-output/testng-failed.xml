@@ -6,7 +6,7 @@
       <class name="com.spice.umang.RunTest">
         <methods>
           <include name="initiateDriver"/>
-          <include name="runTesting"/>
+          <include name="runTesting" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.spice.umang.RunTest -->
     </classes>

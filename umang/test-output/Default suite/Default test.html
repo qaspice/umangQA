@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Dec 14 17:48:21 IST 2018</td>
+<td>Started on:</td><td>Thu Dec 20 16:52:36 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20413 ms)</td>
+<tr><td>Total time:</td><td>69 seconds (69885 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,90 +67,17 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.spice.umang.RunTest.runTesting()'><b>runTesting</b><br>Test class: com.spice.umang.RunTest</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.IndexOutOfBoundsException: Index: 5, Size: 5
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:914)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.runSuites(TestNG.java:1028)
-	at org.testng.TestNG.run(TestNG.java:996)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.IndexOutOfBoundsException: Index: 5, Size: 5
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at com.spice.dataReader.DataReader.readData(DataReader.java:94)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-	... 22 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace40191541", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace40191541'><pre>java.lang.RuntimeException: java.lang.IndexOutOfBoundsException: Index: 5, Size: 5
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:914)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
-	at org.testng.TestNG.runSuites(TestNG.java:1028)
-	at org.testng.TestNG.run(TestNG.java:996)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.IndexOutOfBoundsException: Index: 5, Size: 5
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at com.spice.dataReader.DataReader.readData(DataReader.java:94)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-	... 22 more
-</pre></div></td>
-<td>0</td>
+<td title='com.spice.umang.RunTest.runTesting()'><b>runTesting</b><br>Test class: com.spice.umang.RunTest<br>Parameters: {DescriptionTS_9=Click on permission button, DescriptionTS_8=Click on permission button, DescriptionTS_5=Click on Login, DescriptionTS_4=Click on Login, DescriptionTS_7=Click on permission button, DescriptionTS_6=Click on Login menu, XpathTS_11=in.gov.umang.negd.g2c.staging:id/mpin_input_fld, XpathTS_10=in.gov.umang.negd.g2c.staging:id/mobile_num_input_fld, XpathTS_15=null, XpathTS_14=in.gov.umang.negd.g2c.staging:id/menuImg, XpathTS_13=null, XpathTS_12=in.gov.umang.negd.g2c.staging:id/login_btn, DescriptionTS_1=click on I agree, DescriptionTS_3=Click on Next Button, XpathTS_16=null, EndCount=16, KeywordTS_1=click, KeywordTS_6=click, DataTS_6=null, KeywordTS_5=click, DataTS_7=null, KeywordTS_4=click, DataTS_8=null, KeywordTS_3=click, DataTS_9=null, DataTS_3=null, KeywordTS_9=click, DataTS_4=null, KeywordTS_8=click, DataTS_5=null, KeywordTS_7=click, DataTS_16=null, DataTS_15=null, DataTS_14=null, DataTS_1=null, DataTS_13=null, DataTS_12=null, DataTS_11=1234, DataTS_10=7045299334, DescriptionTS_11=enter mpin, DescriptionTS_12=click on login button, DescriptionTS_13=get Start time, DescriptionTS_14=Verify Element, TCNOTS_8=TS_8,Y, KeywordTS_10=enterText, TCNOTS_9=TS_9,Y, DescriptionTS_10=enter mobile number, KeywordTS_11=enterText, TCNOTS_6=TS_6,Y, KeywordTS_12=click, TCNOTS_7=TS_7,Y, KeywordTS_13=startTime, TCNOTS_4=TS_4,Y, KeywordTS_14=isElementPresent, TCNOTS_5=TS_5,Y, KeywordTS_15=endTime, DescriptionTS_15=Get End time, KeywordTS_16=timeSpan, TCNOTS_3=TS_3,Y, DescriptionTS_16=Calculate time span, TCNOTS_1=TS_1,Y-S, XpathTS_4=in.gov.umang.negd.g2c.staging:id/loginImg, XpathTS_3=in.gov.umang.negd.g2c.staging:id/next_txt, XpathTS_6=in.gov.umang.negd.g2c.staging:id/loginTxt, TCNOTS_15=TS_15,Y, XpathTS_5=in.gov.umang.negd.g2c.staging:id/loginImg, TCNOTS_16=TS_16,Y-E, XpathTS_8=com.android.packageinstaller:id/permission_allow_button, TCNOTS_13=TS_13,Y, StartCount=2, XpathTS_7=com.android.packageinstaller:id/permission_allow_button, TCNOTS_14=TS_14,Y, TCNOTS_11=TS_11,Y, XpathTS_9=com.android.packageinstaller:id/permission_allow_button, TCNOTS_12=TS_12,Y, TCNOTS_10=TS_10,Y, XpathTS_1=in.gov.umang.negd.g2c.staging:id/cb_i_agree}</td>
+<td></td>
+<td>55</td>
 <td>com.spice.umang.RunTest@1a8a8f7c</td></tr>
 </table><p>
 </body>
